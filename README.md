@@ -10,3 +10,5 @@ Add sponsor link
 Make donation page more neat
 
 Update blog
+
+Setup/research donations via github
