@@ -16,3 +16,5 @@ Setup/research donations via github
 Enlarge sponsor links
 
 Add team member descriptions
+
+Add contact info
