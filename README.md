@@ -8,3 +8,5 @@ To-Do:
 Add sponsor link
 
 Make donation page more neat
+
+Update blog
