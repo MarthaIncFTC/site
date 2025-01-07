@@ -8,5 +8,3 @@ To-Do:
 Add sponsor link
 
 Make donation page more neat
-
-Fix links for donors
