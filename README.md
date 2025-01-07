@@ -11,8 +11,6 @@ Make donation page more neat
 
 Update blog
 
-Setup/research donations via github
-
 Enlarge sponsor links
 
 Add team member descriptions
