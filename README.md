@@ -13,8 +13,8 @@ Update blog
 
 Enlarge sponsor links
 
-Add team member descriptions
-
 Add contact info
 
 Who is Martha
+
+Fix amazon wishlist link
