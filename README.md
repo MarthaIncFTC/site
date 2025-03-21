@@ -9,8 +9,6 @@ Add sponsor link
 
 Make donation page more neat
 
-Update blog
-
 Enlarge sponsor links
 
 Add contact info
