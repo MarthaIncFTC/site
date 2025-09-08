@@ -82,11 +82,15 @@ iframe[seamless] {
 
 
 
- <script>
+<div id="navbar"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
     fetch("navbar.html")
       .then(res => res.text())
       .then(data => document.getElementById("navbar").innerHTML = data);
-  </script>
+  });
+</script>
 
 
 
