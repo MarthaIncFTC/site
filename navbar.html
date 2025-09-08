@@ -1,41 +1,51 @@
 <style>
 .top-bar {
-background-color: #983cec;
-position: fixed;
-top: 0;
-width: 100%;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-height: 125px;
+  background: linear-gradient(to bottom, #983cec, #5e2396); /* smooth fade */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 125px;
 }
+
+.top-bar img {
+  max-height: 100%;  /* keeps logo inside navbar */
+  height: auto;
+  width: auto;
+}
+
 .top-bar a {
-text-decoration: none;
-color: #333;
-font-size: 20px;
-font-weight: bold;
-padding: 20px 25px;
-border: 2px solid #333;
-border-radius: 9px;
-background: white;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 25px;
+  border: 2px solid #333;
+  border-radius: 9px;
+  background: white;
 }
+
 .top-bar a:hover {
-color: #0000ff;
-border-color: #0000ff;
+  color: #0000ff;
+  border-color: #0000ff;
 }
+
 .stats-link {
   box-shadow: 0 0 0 2px yellow, 0 0 0 4px #333;
 }
+
 .stats-link:hover {
   box-shadow: 0 0 0 2px yellow, 0 0 0 4px #0000ff;
 }
 </style>
 
 <div class="top-bar">
-<img src="Logo.png" alt="Logo" style="max-width: 8%; height: auto;" />
-<a href="index.html">Home</a>
-<a href="Team.html">Team</a>
-<a href="FTC.html">What is FTC</a>
-<a href="Support.html">Support</a>
-<a href="https://ftcvideos.org/?search=25899&page=1" target="_blank" class="stats-link">Stats</a>
+  <img src="Logo.png" alt="Logo" />
+  <a href="index.html">Home</a>
+  <a href="Team.html">Team</a>
+  <a href="FTC.html">What is FTC</a>
+  <a href="Support.html">Support</a>
+  <a href="https://ftcvideos.org/?search=25899&page=1" target="_blank" class="stats-link">Stats</a>
 </div>
