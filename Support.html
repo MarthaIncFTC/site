@@ -66,14 +66,16 @@ font-size: 25px;
 <link rel="icon" href="Logo.png">
 </head>
 <body>
-<div class="top-bar">
-<img src="Logo.png" alt="Logo" style="max-width: 8%; height: auto;" />
-<a href="index.html">Home</a>
-<a href="Team.html">Team</a>
-<a href="FTC.html">What is FTC</a>
-<a href="https://ftcvideos.org/?search=25899&page=1" target="_blank">Stats</a>
-<a href="Support.html">Support</a>
-</div>
+<div id="navbar"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("navbar").innerHTML = data);
+  });
+</script>
+
 <div class="content">
 <br><br>
 <h1>Support Page</h1>
