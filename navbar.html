@@ -11,12 +11,6 @@
   border-bottom: 2px solid black;
 }
 
-.top-bar img {
-  max-height: 100%;
-  height: auto;
-  width: auto;
-}
-
 .top-bar a {
   text-decoration: none;
   color: #333;
@@ -32,6 +26,12 @@
   border-color: lightblue;
 }
 
+.top-bar img {
+  max-height: 100%;
+  height: auto;
+  width: auto;
+}
+
 .stats-link {
   box-shadow: 0 0 0 2px yellow, 0 0 0 4px #333;
 }
@@ -45,9 +45,6 @@
     display: none;
   }
 
-  .top-bar a.ftc-link {
-    font-size: 20px;
-  }
   .top-bar a.ftc-link::after {
     content: "FTC";
   }
@@ -58,7 +55,7 @@
 </style>
 
 <div class="top-bar">
-  <img src="Logo.png" alt="Logo" />
+  <a href="index.html"><img src="Logo.png" alt="Home" /></a>
   <a href="index.html">Home</a>
   <a href="Team.html">Team</a>
   <a href="FTC.html" class="ftc-link"><span>What is FTC</span></a>
