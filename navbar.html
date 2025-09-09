@@ -1,98 +1,109 @@
-<style>
-body {
-  margin: 0;
-  background: grey;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5e2396">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      background: grey;
+    }
 
-.top-bar-strip {
-  background: #5e2396;
-  height: 20px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-}
+    .top-bar-strip {
+      background: #5e2396;
+      height: 20px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }
 
-.top-bar {
-  background: linear-gradient(to top, #983cec, #5e2396);
-  position: fixed;
-  top: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 125px;
-  border-bottom: 2px solid black;
-  z-index: 1000;
-}
+    .top-bar {
+      background: linear-gradient(to top, #983cec, #5e2396);
+      position: fixed;
+      top: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 125px;
+      border-bottom: 2px solid black;
+      z-index: 1000;
+    }
 
-.top-bar img {
-  max-height: 100%;
-  height: auto;
-  width: auto;
-}
+    .top-bar img {
+      max-height: 100%;
+      height: auto;
+      width: auto;
+    }
 
-.top-bar a {
-  text-decoration: none;
-  color: #333;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 20px 25px;
-  border: 3px solid #333;
-  border-radius: 9px;
-  background: white;
-  position: relative;
-}
+    .top-bar a {
+      text-decoration: none;
+      color: #333;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 20px 25px;
+      border: 3px solid #333;
+      border-radius: 9px;
+      background: white;
+      position: relative;
+    }
 
-.top-bar a:hover {
-  border-color: lightblue;
-}
+    .top-bar a:hover {
+      border-color: lightblue;
+    }
 
-.stats-link::after {
-  content: "External site";
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #333;
-  color: white;
-  font-size: 14px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s ease-in-out;
-}
+    .stats-link::after {
+      content: "External site";
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #333;
+      color: white;
+      font-size: 14px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease-in-out;
+    }
 
-.stats-link:hover::after {
-  opacity: 1;
-}
+    .stats-link:hover::after {
+      opacity: 1;
+    }
 
-@media (max-width: 700px) {
-  .top-bar img {
-    display: none;
-  }
+    @media (max-width: 700px) {
+      .top-bar img {
+        display: none;
+      }
 
-  .top-bar a.ftc-link {
-    font-size: 20px;
-  }
-  .top-bar a.ftc-link::after {
-    content: "FTC";
-  }
-  .top-bar a.ftc-link span {
-    display: none;
-  }
-}
-</style>
-
-<div class="top-bar-strip"></div>
-<div class="top-bar">
-  <img src="Logo.png" alt="Logo" />
-  <a href="index.html">Home</a>
-  <a href="Team.html">Team</a>
-  <a href="FTC.html" class="ftc-link"><span>What is FTC</span></a>
-  <a href="Support.html">Support</a>
-  <a href="https://ftcvideos.org/?search=25899&page=1" target="_blank" class="stats-link">Stats</a>
-</div>
+      .top-bar a.ftc-link {
+        font-size: 20px;
+      }
+      .top-bar a.ftc-link::after {
+        content: "FTC";
+      }
+      .top-bar a.ftc-link span {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar-strip"></div>
+  <div class="top-bar">
+    <img src="Logo.png" alt="Logo" />
+    <a href="index.html">Home</a>
+    <a href="Team.html">Team</a>
+    <a href="FTC.html" class="ftc-link"><span>What is FTC</span></a>
+    <a href="Support.html">Support</a>
+    <a href="https://ftcvideos.org/?search=25899&page=1" target="_blank" class="stats-link">Stats</a>
+  </div>
+</body>
+</html>
