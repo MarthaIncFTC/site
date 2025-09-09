@@ -1,8 +1,23 @@
 <style>
+body {
+  margin: 0;
+  background: grey;
+}
+
+.top-bar-container {
+  position: relative;
+}
+
+.top-bar-strip {
+  background: #5e2396;
+  height: 20px;
+  width: 100%;
+}
+
 .top-bar {
   background: linear-gradient(to top, #983cec, #5e2396);
   position: fixed;
-  top: 0;
+  top: 20px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -71,11 +86,14 @@
 }
 </style>
 
-<div class="top-bar">
-  <img src="Logo.png" alt="Logo" />
-  <a href="index.html">Home</a>
-  <a href="Team.html">Team</a>
-  <a href="FTC.html" class="ftc-link"><span>What is FTC</span></a>
-  <a href="Support.html">Support</a>
-  <a href="https://ftcvideos.org/?search=25899&page=1" target="_blank" class="stats-link">Stats</a>
+<div class="top-bar-container">
+  <div class="top-bar-strip"></div>
+  <div class="top-bar">
+    <img src="Logo.png" alt="Logo" />
+    <a href="index.html">Home</a>
+    <a href="Team.html">Team</a>
+    <a href="FTC.html" class="ftc-link"><span>What is FTC</span></a>
+    <a href="Support.html">Support</a>
+    <a href="https://ftcvideos.org/?search=25899&page=1" target="_blank" class="stats-link">Stats</a>
+  </div>
 </div>
