@@ -11,6 +11,12 @@
   border-bottom: 2px solid black;
 }
 
+.top-bar img {
+  max-height: 100%;
+  height: auto;
+  width: auto;
+}
+
 .top-bar a {
   text-decoration: none;
   color: #333;
@@ -20,24 +26,32 @@
   border: 3px solid #333;
   border-radius: 9px;
   background: white;
+  position: relative;
 }
 
 .top-bar a:hover {
   border-color: lightblue;
 }
 
-.top-bar img {
-  max-height: 100%;
-  height: auto;
-  width: auto;
+.stats-link::after {
+  content: "External site";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
 }
 
-.stats-link {
-  box-shadow: 0 0 0 2px yellow, 0 0 0 4px #333;
-}
-
-.stats-link:hover {
-  box-shadow: 0 0 0 2px yellow, 0 0 0 4px #0000ff;
+.stats-link:hover::after {
+  opacity: 1;
 }
 
 @media (max-width: 700px) {
@@ -45,6 +59,9 @@
     display: none;
   }
 
+  .top-bar a.ftc-link {
+    font-size: 20px;
+  }
   .top-bar a.ftc-link::after {
     content: "FTC";
   }
@@ -55,7 +72,7 @@
 </style>
 
 <div class="top-bar">
-  <a href="index.html"><img src="Logo.png" alt="Home" /></a>
+  <img src="Logo.png" alt="Logo" />
   <a href="index.html">Home</a>
   <a href="Team.html">Team</a>
   <a href="FTC.html" class="ftc-link"><span>What is FTC</span></a>
