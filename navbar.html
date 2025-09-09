@@ -4,14 +4,14 @@ body {
   background: grey;
 }
 
-.top-bar-container {
-  position: relative;
-}
-
 .top-bar-strip {
   background: #5e2396;
   height: 20px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 .top-bar {
@@ -24,6 +24,7 @@ body {
   align-items: center;
   height: 125px;
   border-bottom: 2px solid black;
+  z-index: 1000;
 }
 
 .top-bar img {
@@ -86,14 +87,12 @@ body {
 }
 </style>
 
-<div class="top-bar-container">
-  <div class="top-bar-strip"></div>
-  <div class="top-bar">
-    <img src="Logo.png" alt="Logo" />
-    <a href="index.html">Home</a>
-    <a href="Team.html">Team</a>
-    <a href="FTC.html" class="ftc-link"><span>What is FTC</span></a>
-    <a href="Support.html">Support</a>
-    <a href="https://ftcvideos.org/?search=25899&page=1" target="_blank" class="stats-link">Stats</a>
-  </div>
+<div class="top-bar-strip"></div>
+<div class="top-bar">
+  <img src="Logo.png" alt="Logo" />
+  <a href="index.html">Home</a>
+  <a href="Team.html">Team</a>
+  <a href="FTC.html" class="ftc-link"><span>What is FTC</span></a>
+  <a href="Support.html">Support</a>
+  <a href="https://ftcvideos.org/?search=25899&page=1" target="_blank" class="stats-link">Stats</a>
 </div>
