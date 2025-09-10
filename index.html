@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home Page</title>
-<style>
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-background-color: #7c7c7c;
-}
+  <title>Home Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #7c7c7c;
+    }
 
-.content {
-margin-top: 75px;
-padding: 20px;
-text-align: center;
-}
-p {
-font-size: 25px;
-}
-.snowflakes {
-position: fixed;
-bottom: 0;
-left: 0;
-width: 100%;
-height: auto;
-opacity: 0.6;
-z-index: -1;
-}
-ul {
-list-style-type: disc;
-display: inline-block;
-text-align: left;
-padding-left: 20px;
-font-size: 25px;
-}
-.logo {
-  max-width: 25%;
-  max-width: 150px;
-  height: auto;
-  margin-top: 20px;
-}
+    .content {
+      margin-top: 75px;
+      padding: 20px;
+      text-align: center;
+    }
 
-  iframe:focus {
-  outline: none;
-}
+    p {
+      font-size: 25px;
+    }
 
-iframe[seamless] {
-  display: block;
-}
-</style>
-<link rel="icon" href="Logo.png">
+    .snowflakes {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      opacity: 0.6;
+      z-index: -1;
+    }
+
+    ul {
+      list-style-type: disc;
+      display: inline-block;
+      text-align: left;
+      padding-left: 20px;
+      font-size: 25px;
+    }
+
+    .logo {
+      max-width: 25%;
+      max-width: 150px;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    iframe:focus {
+      outline: none;
+    }
+
+    iframe[seamless] {
+      display: block;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+  <link rel="icon" href="Logo.png">
 </head>
 <body>
-
-
-
-
-
-
-
 
 <div id="navbar"></div>
 
@@ -69,67 +84,66 @@ iframe[seamless] {
   });
 </script>
 
-
-
-
-
-
-
-
-
 <div class="content">
-<br>
-<img src="Logo.png" alt="Logo" class="logo" />
-<h1 style="color: red;">!!!DISCLAIMER!!!</h1>
-<p>This is <u>not</u> our main website. This is our testing website where we experiment with the website. Anything seen on this website may not be accurate, please refer to <a>marthaincftc.github.io/site</a>.
-</p>
+  <br>
+  <img src="Logo.png" alt="Logo" class="logo" />
+  <h1 style="color: red;">!!!DISCLAIMER!!!</h1>
+  <p>This is <u>not</u> our main website. This is our testing website where we experiment with the website. Anything seen on this website may not be accurate, please refer to <a>marthaincftc.github.io/site</a>.</p>
 
+  <h1>Our Season Goals for 2025-2026</h1>
+  <ul>
+    <li>Participate in 5 outreach events</li>
+    <li>Learn to CAD</li>
+    <li>Learn Java</li>
+    <li>Place top 5 in at least one competition</li>
+    <li>Make it to states</li>
+  </ul>
 
-<h1>Our Season Goals for 2025-2026</h1>
-<ul>
-  <li>Participate in 5 outreach events</li>
-  <li>Learn to CAD</li>
-  <li>Learn Java</li>
-  <li>Place top 5 in at least one competition</li>
-  <li>Make it to states</li>
-</ul>
-<br><br>
-
-<iframe src="https://www.youtube.com/embed/AS18RqVpeqc?start=14987" height="550" width="750" frameborder="0" allowfullscreen="true"></iframe>
-
-
-  
   <br><br>
-<hr>
-<a href="https://www.amplexus.biz/" target="_blank">
+
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/AS18RqVpeqc?start=14987" 
+      allowfullscreen 
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <br><br>
+  <hr>
+
+  <a href="https://www.amplexus.biz/" target="_blank">
     <img src="ampleXus.jpg" alt="Sponsor 1: ampleXus" style="max-width: 50%; height: auto;">
-</a>
-<p>ampleXus</p>
-<p>238 High St., #115, Morgantown WV 26505</p>
+  </a>
+  <p>ampleXus</p>
+  <p>238 High St., #115, Morgantown WV 26505</p>
 
-<a href="https://www.learningacademy.org/" target="_blank">
+  <a href="https://www.learningacademy.org/" target="_blank">
     <img src="mla.jpg" alt="Sponsor 2: Morgantown Learning Academy" style="max-width: 50%; height: auto;">
-</a>
-<p>Morgantown Learning Academy</p>
-<p>123 Discovery Place, Morgantown WV, 26508</p>
+  </a>
+  <p>Morgantown Learning Academy</p>
+  <p>123 Discovery Place, Morgantown WV, 26508</p>
 
-<a href="https://coniandfranc.net/" target="_blank">
+  <a href="https://coniandfranc.net/" target="_blank">
     <img src="coni&franc.png" alt="Sponsor 3: Coni & Franc" style="max-width: 38%; height: auto;">
-</a>
-<p>CONI & FRANC</p>
-<p>422 High St, Morgantown, WV 26505</p>
+  </a>
+  <p>CONI & FRANC</p>
+  <p>422 High St, Morgantown, WV 26505</p>
 
-<a href="https://www.mybarberchad.com/" target="_blank">
+  <a href="https://www.mybarberchad.com/" target="_blank">
     <img src="chad.png" alt="Sponsor 4: My Barber Chad" style="max-width: 85%; height: auto;">
-</a>
-<p>My Barber Chad</p>
-<p>179 Fayette St, Morgantown, WV 26505</p>
+  </a>
+  <p>My Barber Chad</p>
+  <p>179 Fayette St, Morgantown, WV 26505</p>
 
-<a href="https://www.wowfactoryonline.com/" target="_blank">
+  <a href="https://www.wowfactoryonline.com/" target="_blank">
     <img src="wow.png" alt="Sponsor 5: The Wow Factory" style="max-width: 35%; height: auto;">
-</a>
-<p>The Wow Factory</p>
-<p>3453 University Ave #1, Star City, WV 26505</p>
-<hr>
+  </a>
+  <p>The Wow Factory</p>
+  <p>3453 University Ave #1, Star City, WV 26505</p>
+
+  <hr>
+</div>
+
 </body>
 </html>
