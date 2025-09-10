@@ -70,7 +70,15 @@
   border: 1px solid lightblue;
 }
 
-.dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown.active .dropdown-content {
+    display: block;
+  }
+
+.dropdown.active .dropdown-content {
   display: block;
 }
 
@@ -120,10 +128,30 @@
   <a href="FTC.html" class="ftc-link"><span>What is FTC</span></a>
   <a href="Support.html">Support</a>
   <div class="dropdown">
-    <a href="#" class="stats-link">Stats</a>
+    <a href="#" class="stats-link" onclick="toggleDropdown(event)">Stats</a>
     <div class="dropdown-content">
       <a href="https://ftcvideos.org/?search=25899&page=1" target="_blank">Videos</a>
       <a href="https://ftc-events.firstinspires.org/team/25899" target="_blank">Events</a>
     </div>
   </div>
 </div>
+
+<script>
+function toggleDropdown(event) {
+  event.preventDefault();
+  const dropdown = event.target.closest('.dropdown');
+  const isActive = dropdown.classList.contains('active');
+  
+  document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+  
+  if (!isActive) {
+    dropdown.classList.add('active');
+  }
+}
+
+document.addEventListener('click', function(event) {
+  if (!event.target.closest('.dropdown')) {
+    document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+  }
+});
+</script>

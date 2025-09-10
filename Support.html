@@ -9,6 +9,13 @@ font-family: Arial, sans-serif;
 background-color: #7c7c7c;
 }
 
+@supports (-webkit-touch-callout: none) {
+  body {
+    padding-top: env(safe-area-inset-top);
+    background: linear-gradient(to bottom, #983cec 0px, #983cec env(safe-area-inset-top), #7c7c7c env(safe-area-inset-top));
+  }
+}
+
 .content {
 margin-top: 75px;
 padding: 20px;
@@ -39,6 +46,12 @@ font-size: 25px;
   height: auto;
   margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+  .sponsorship-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
 </style>
 <link rel="icon" href="Logo.png">
 </head>
@@ -58,84 +71,122 @@ font-size: 25px;
 <h1>Support Page</h1>
 <br>
 
-
-<a href="https://www.amazon.com/registries/gl/guest-view/3HGAG56TE86E7" target="_blank">Amazon Wishlist</a>
-<br>
-<a href="https://gofund.me/b9ae68fe" target="_blank">GoFundMe</a>
-<br>
+<div style="display: flex; justify-content: center; gap: 30px; margin: 30px 0; flex-wrap: wrap;">
+    <a href="https://www.amazon.com/registries/gl/guest-view/3HGAG56TE86E7" target="_blank" style="background: white; padding: 20px 30px; border-radius: 15px; text-decoration: none; color: #333; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
+        🛒 Amazon Wishlist
+    </a>
+    <a href="https://gofund.me/b9ae68fe" target="_blank" style="background: white; padding: 20px 30px; border-radius: 15px; text-decoration: none; color: #333; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
+        💰 GoFundMe
+    </a>
+</div>
 
   
 <h2>Our Sponsors:</h2>
-<a href="https://www.amplexus.biz/" target="_blank">
-    <img src="ampleXus.jpg" alt="Sponsor 1: ampleXus" style="max-width: 50%; height: auto;">
-</a>
-<p>ampleXus</p>
-<p>238 High St., #115, Morgantown WV 26505</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin: 30px 0;">
+    <div style="text-align: center; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 250px;">
+        <a href="https://www.amplexus.biz/" target="_blank">
+            <img src="ampleXus.jpg" alt="Sponsor 1: ampleXus" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+        </a>
+        <h3 style="margin: 10px 0; color: #333;">ampleXus</h3>
+        <p style="margin: 5px 0; color: #666;">238 High St., #115, Morgantown WV 26505</p>
+    </div>
 
-<a href="https://www.learningacademy.org/" target="_blank">
-    <img src="mla.jpg" alt="Sponsor 2: Morgantown Learning Academy" style="max-width: 50%; height: auto;">
-</a>
-<p>Morgantown Learning Academy</p>
-<p>123 Discovery Place, Morgantown WV, 26508</p>
+    <div style="text-align: center; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 250px;">
+        <a href="https://www.learningacademy.org/" target="_blank">
+            <img src="mla.jpg" alt="Sponsor 2: Morgantown Learning Academy" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+        </a>
+        <h3 style="margin: 10px 0; color: #333;">Morgantown Learning Academy</h3>
+        <p style="margin: 5px 0; color: #666;">123 Discovery Place, Morgantown WV, 26508</p>
+    </div>
 
-<a href="https://coniandfranc.net/" target="_blank">
-    <img src="coni&franc.png" alt="Sponsor 3: Coni & Franc" style="max-width: 38%; height: auto;">
-</a>
-<p>CONI & FRANC</p>
-<p>422 High St, Morgantown, WV 26505</p>
+    <div style="text-align: center; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 250px;">
+        <a href="https://coniandfranc.net/" target="_blank">
+            <img src="coni&franc.png" alt="Sponsor 3: Coni & Franc" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+        </a>
+        <h3 style="margin: 10px 0; color: #333;">CONI & FRANC</h3>
+        <p style="margin: 5px 0; color: #666;">422 High St, Morgantown, WV 26505</p>
+    </div>
 
-<a href="https://www.mybarberchad.com/" target="_blank">
-    <img src="chad.png" alt="Sponsor 4: My Barber Chad" style="max-width: 85%; height: auto;">
-</a>
-<p>My Barber Chad</p>
-<p>179 Fayette St, Morgantown, WV 26505</p>
+    <div style="text-align: center; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 250px;">
+        <a href="https://www.mybarberchad.com/" target="_blank">
+            <img src="chad.png" alt="Sponsor 4: My Barber Chad" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+        </a>
+        <h3 style="margin: 10px 0; color: #333;">My Barber Chad</h3>
+        <p style="margin: 5px 0; color: #666;">179 Fayette St, Morgantown, WV 26505</p>
+    </div>
 
-<a href="https://www.wowfactoryonline.com/" target="_blank">
-    <img src="wow.png" alt="Sponsor 5: The Wow Factory" style="max-width: 35%; height: auto;">
-</a>
-<p>The Wow Factory</p>
-<p>3453 University Ave #1, Star City, WV 26505</p>
-
-    <br><br>
-<p>Any money or donations we receive goes toward the equipment and fees needed to build the robot and enter competitions. For businesses looking to become sponsors we have two options. We accept monetary donations or you can also purchase something off our wish list. There is more information about each option below. </p>
-
-<h2>Sponsorship Donations Info</h2>
-
-<div style="display: inline-block; text-align: left;">
-    <h3>Any amount</h3>
-    <p>Your business's logo and link on our home page</p>
-    
-    <h3>$50+</h3>
-    <p>Your business's logo, link, and address on our home page</p>
-    
-    <h3>$100+</h3>
-    <p>Your business's logo, link, and address on our home page and Support page</p>
-    <p>Your business's name on our shirt</p>
-    
-    <h3>$250+</h3>
-    <p>Your business's logo, link, and address on our home page and Support page</p>
-    <p>Your business's logo on our shirt</p>
-    
-    <h3>$500+</h3>
-    <p>Your business's logo, link, and address on our home page and Support page</p>
-    <p>Your business's logo on our shirt</p>
-    <p>Your business's logo on our robot</p>
-    
-    
-    <h2>Sponsorship Wishlist Info</h2>
-    
-    <h3>$50 Items & Under</h3>
-    <p>Your business's logo, link, and address on our home page.</p>
-   
-    <h3>$50-100 Items</h3>
-    <p>Your business's logo, link, and address on our home page and Support page</p>
-    
-    <h3>$100+ Items & Over</h3>
-    <p>Your business's logo, link, and address on our home page and Support page</p>
-    <p>Your business's logo on our shirt</p>
+    <div style="text-align: center; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 250px;">
+        <a href="https://www.wowfactoryonline.com/" target="_blank">
+            <img src="wow.png" alt="Sponsor 5: The Wow Factory" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+        </a>
+        <h3 style="margin: 10px 0; color: #333;">The Wow Factory</h3>
+        <p style="margin: 5px 0; color: #666;">3453 University Ave #1, Star City, WV 26505</p>
+    </div>
 </div>
 
-<p>If you are looking to purchase something off our Wishlist <a href="https://www.amazon.com/registries/gl/guest-view/3HGAG56TE86E7" target="_blank">click here.</a> After you purchase something we would appreciate it if you would email <u>martha.inc.ftc@gmail.com</u> and inform us of your purchase so we can include you in our rewards. If you are looking to make a monetary donation please send a check to 123 discovery place Morgantown WV 26508.</p>
+    <br><br>
+<div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 30px 0; max-width: 800px; margin-left: auto; margin-right: auto;">
+    <p style="text-align: center; font-size: 18px; margin-bottom: 30px;">Any money or donations we receive goes toward the equipment and fees needed to build the robot and enter competitions. For businesses looking to become sponsors we have two options. We accept monetary donations or you can also purchase something off our wish list. There is more information about each option below.</p>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px;" class="sponsorship-grid">
+        <div>
+            <h2 style="text-align: center; color: #333; margin-bottom: 20px;">Sponsorship Donations Info</h2>
+            
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                <h3 style="color: #983cec; margin: 0 0 10px 0;">Any amount</h3>
+                <p style="margin: 0;">Your business's logo and link on our home page</p>
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                <h3 style="color: #983cec; margin: 0 0 10px 0;">$50+</h3>
+                <p style="margin: 0;">Your business's logo, link, and address on our home page</p>
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                <h3 style="color: #983cec; margin: 0 0 10px 0;">$100+</h3>
+                <p style="margin: 0;">Your business's logo, link, and address on our home page and Support page</p>
+                <p style="margin: 5px 0 0 0;">Your business's name on our shirt</p>
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                <h3 style="color: #983cec; margin: 0 0 10px 0;">$250+</h3>
+                <p style="margin: 0;">Your business's logo, link, and address on our home page and Support page</p>
+                <p style="margin: 5px 0 0 0;">Your business's logo on our shirt</p>
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                <h3 style="color: #983cec; margin: 0 0 10px 0;">$500+</h3>
+                <p style="margin: 0;">Your business's logo, link, and address on our home page and Support page</p>
+                <p style="margin: 5px 0 0 0;">Your business's logo on our shirt</p>
+                <p style="margin: 5px 0 0 0;">Your business's logo on our robot</p>
+            </div>
+        </div>
+        
+        <div>
+            <h2 style="text-align: center; color: #333; margin-bottom: 20px;">Sponsorship Wishlist Info</h2>
+            
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                <h3 style="color: #983cec; margin: 0 0 10px 0;">$50 Items & Under</h3>
+                <p style="margin: 0;">Your business's logo, link, and address on our home page</p>
+            </div>
+           
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                <h3 style="color: #983cec; margin: 0 0 10px 0;">$50-100 Items</h3>
+                <p style="margin: 0;">Your business's logo, link, and address on our home page and Support page</p>
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                <h3 style="color: #983cec; margin: 0 0 10px 0;">$100+ Items & Over</h3>
+                <p style="margin: 0;">Your business's logo, link, and address on our home page and Support page</p>
+                <p style="margin: 5px 0 0 0;">Your business's logo on our shirt</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 30px 0; max-width: 800px; margin-left: auto; margin-right: auto;">
+    <p style="text-align: center;">If you are looking to purchase something off our Wishlist <a href="https://www.amazon.com/registries/gl/guest-view/3HGAG56TE86E7" target="_blank" style="color: #983cec; font-weight: bold;">click here.</a> After you purchase something we would appreciate it if you would email <u>martha.inc.ftc@gmail.com</u> and inform us of your purchase so we can include you in our rewards. If you are looking to make a monetary donation please send a check to 123 discovery place Morgantown WV 26508.</p>
+</div>
 
 </body>
 </html>
